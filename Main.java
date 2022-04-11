@@ -60,7 +60,7 @@ binary operators:
                         stack.empty();
                     }
                 }
-            } else { System.out.println("Your expression is not well-formed! Couldn't parse."); }
+            } else { System.out.println("Your expression is not well-formed! Couldn't parse"); }
         }
     }
 }
