@@ -1,6 +1,7 @@
 # RPN Logic Parser
 Truth table generator and evaulator for logical expressions in Java.\
 Using a few design patterns taught in my degree course. 
+https://cdn.discordapp.com/attachments/214715640928403456/963179095338922104/unknown.png
 ## Usage notes 
 Variables:
 - any meaningless string (e.g. A, b, myTruthValue)
