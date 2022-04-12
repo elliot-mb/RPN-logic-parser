@@ -45,17 +45,29 @@ binary operators:
                 if(variables.length == 0) { System.out.println((stack.evaulate(tokens) ? "T" : "F")); }
                 else {
                     // truth table business
+                    String paddingLeft = ""; String paddingRight = "";
+                    for(int k = 0; k < Arrays.toString(variables).length() - (variables.length * 3); k++){
+                        if(k % 2 == 0) { paddingRight += " "; }
+                        else { paddingLeft += " "; }
+                    }
+
+                    String resultPadding = "";
+                    for(int l = 0; l < Math.ceil((double) Arrays.toString(tokens).length() / 2) - 1; l++) {
+                        resultPadding += " ";
+                    }
+
                     System.out.print(Arrays.toString(variables));
                     System.out.print(" │ " + Arrays.toString(tokens));
                     System.out.println();
+
                     for (int i = 0; i < Math.pow(2, variables.length); i++) {
                         String combination = Integer.toBinaryString((int) (Math.pow(2, variables.length) + i)).substring(1);
                         for (int j = 0; j < variables.length; j++) {
                             variables[j].setVal(combination.charAt(j) == '1');
                         }
-                        System.out.print(Arrays.toString(variables));
+                        System.out.print(paddingLeft + Arrays.toString(variables) + paddingRight);
                         //System.out.print(" | " + Arrays.toString(tokens));
-                        System.out.print(" │ " + (stack.evaulate(tokens) ? "T" : "F"));
+                        System.out.print(" │ " + resultPadding  + (stack.evaulate(tokens) ? "T" : "F"));
                         System.out.println();
                         stack.empty();
                     }

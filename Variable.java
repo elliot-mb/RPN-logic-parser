@@ -2,7 +2,9 @@ public class Variable implements Token{
     private Nullary n; //mutable Nullary (its value) class that changes to make truth tables
     private final String name;
 
-    Variable(String name){ this.name = name; }
+    Variable(String name){
+        this.name = name;
+    }
 
     Variable(String name, Boolean val) {
         this.name = name;
