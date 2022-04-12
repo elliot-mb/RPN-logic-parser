@@ -1,6 +1,9 @@
 # RPN Logic Parser
-Truth table generator and evaulator for logical expressions in Java.\
-Using a few design patterns taught in my degree course. 
+Truth table generator and evaulator for logical expressions in Java, using a few design patterns taught in my OOP module.
+Data validation is used to avoid runtime errors.
+
+<img align="center" width="600" src="https://user-images.githubusercontent.com/45922387/163029385-d58cb206-4406-464a-9514-f2313a2c6b32.png">
+
 ## Usage notes 
 Variables:
 - any meaningless string (e.g. A, b, myTruthValue)
