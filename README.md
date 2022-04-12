@@ -1,5 +1,5 @@
 # RPN Logic Parser
-<img align="right" width="400" src="https://user-images.githubusercontent.com/45922387/162830507-24bcae5e-4e58-4b48-bbb2-6f4764360130.png">
+<img align="right" width="450" src="https://user-images.githubusercontent.com/45922387/163029385-d58cb206-4406-464a-9514-f2313a2c6b32.png">
 Truth table generator and evaulator for logical expressions in Java, using a few design patterns taught in my OOP module.
 Data validation is used to avoid runtime errors.
 
